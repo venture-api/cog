@@ -1,0 +1,27 @@
+{
+  "name": "cog",
+  "version": "0.1.0",
+  "description": "⚙ Venture API CPU-bound service",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venture-api/cog.git"
+  },
+  "keywords": [
+    "venture-api"
+  ],
+  "author": "Maksim Korinets",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/venture-api/cog/issues"
+  },
+  "homepage": "https://github.com/venture-api/cog#readme",
+  "dependencies": {
+    "kojo": "^3.2.3",
+    "tasu": "^4.1.1",
+    "yt-config": "^2.0.2"
+  }
+}
