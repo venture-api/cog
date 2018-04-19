@@ -1,6 +1,5 @@
 dist: xenial
 language: node_js
-services: mongodb
 
 node_js:
   - lts/*
@@ -9,6 +8,10 @@ before_install:
   - go get github.com/nats-io/gnatsd
   - nohup npm run nats > /dev/null 2>&1 &
 
-install: npm i
+install: npm ci
+
+cache:
+  directories:
+  - "$HOME/.npm"
 
 script: nyc npm test && nyc report --reporter=text-lcov | coveralls
