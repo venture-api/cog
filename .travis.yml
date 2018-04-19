@@ -7,6 +7,7 @@ node_js:
 before_install:
   - go get github.com/nats-io/gnatsd
   - nohup npm run nats > /dev/null 2>&1 &
+  - npm i -g npm@5.8.0
 
 install: npm ci
 
