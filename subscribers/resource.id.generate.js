@@ -7,7 +7,7 @@ module.exports = (kojo) => {
     const tasu = kojo.get('tasu');
     const config = kojo.get('config');
 
-    tasu.listen('generate.resource.id', async ({type}) => {
+    tasu.listen('resource.id.generate', async ({type}) => {
 
         assert(type, 'type not defined');
         const id = generate(config.id.alphabet.resource, config.id.length.resource);

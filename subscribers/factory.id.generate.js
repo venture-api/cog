@@ -6,7 +6,7 @@ module.exports = (kojo) => {
     const tasu = kojo.get('tasu');
     const config = kojo.get('config');
 
-    tasu.listen('generate.factory.id', async ({type='general'}) => {
+    tasu.listen('factory.id.generate', async ({type='general'}) => {
 
         const id = generate(config.id.alphabet.factory, config.id.length.factory);
         return `${config.codes.factory}-${id}-${config.codes[type]}`;

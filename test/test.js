@@ -22,22 +22,22 @@ describe('cog', () => {
 
     describe('"generate" listeners', () => {
 
-        it('handles generate.player.id', async () => {
+        it('handles player.id.generate', async () => {
 
-            const id = await tasu.request('generate.player.id', {});
+            const id = await tasu.request('player.id.generate', {});
             assert.include(id, config.codes.player);
         });
 
-        it('handles generate.factory.id', async () => {
+        it('handles factory.id.generate', async () => {
 
-            const id = await tasu.request('generate.factory.id', {});
+            const id = await tasu.request('factory.id.generate', {});
             assert.include(id, config.codes.factory);
             assert.include(id, config.codes.general);
         });
 
-        it('handles generate.resource.id', async () => {
+        it('handles resource.id.generate', async () => {
 
-            const id = await tasu.request('generate.resource.id', {type: 'coal'});
+            const id = await tasu.request('resource.id.generate', {type: 'coal'});
             assert.include(id, config.codes.resource);
             assert.include(id, config.codes.coal);
         });
