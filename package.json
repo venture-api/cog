@@ -24,12 +24,12 @@
   "homepage": "https://github.com/venture-api/cog#readme",
   "dependencies": {
     "chai": "^4.1.2",
-    "coveralls": "^3.0.0",
-    "kojo": "^3.2.3",
-    "mocha": "^5.1.0",
-    "nanoid": "^1.0.2",
-    "nyc": "^11.7.1",
+    "coveralls": "^3.0.1",
+    "kojo": "^3.3.0",
+    "mocha": "^5.2.0",
+    "nanoid": "^1.0.3",
+    "nyc": "^11.9.0",
     "tasu": "^4.1.1",
-    "yt-config": "^2.0.2"
+    "yt-config": "^2.1.1"
   }
 }
